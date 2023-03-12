@@ -8,7 +8,7 @@ const Cards = () => {
   const[arrayInfoCards, setArrayInfoCards]=useState([])
 
   useEffect(()=>{
-    let path="http://localhost:5555/info-cards"
+    let path="https://json-server-vercel-peach.vercel.app/info-cards"
 
     const getInfoCards = async () =>{
 

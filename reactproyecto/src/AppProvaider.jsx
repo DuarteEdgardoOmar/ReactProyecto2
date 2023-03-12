@@ -66,7 +66,7 @@ const AppProvaider = ({ children }) => {
   const [producto, setProducto] = useState([]);
 
   useEffect(() => {
-    const path = "http://localhost:5555/products";
+    const path = "https://json-server-vercel-peach.vercel.app/products";
     const cargarProductos = async () => {
       try {
         const res = await axios.get(path);

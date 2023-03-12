@@ -11,7 +11,7 @@ const Carousel = () => {
   useEffect(() => {
     const llenarArreglo = async () => {
       try {
-        const res = await axios.get("http://localhost:5555/imagen");
+        const res = await axios.get("https://json-server-vercel-peach.vercel.app/imagen");
 
         if (res.status === 200) {
           console.log(res.data);

@@ -6,7 +6,7 @@ const Body = () => {
 
   useEffect(() => {
     const getInfoBody = async () => {
-      let path = "http://localhost:5555/info-body";
+      let path = "https://json-server-vercel-peach.vercel.app/info-body";
       try {
         const res = await axios.get(path);
 
