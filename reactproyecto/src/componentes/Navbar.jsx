@@ -1,10 +1,16 @@
 import LOGO from "../images/Logo.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import { useAppContext } from "../AppProvaider";
 
 const NavBar = () => {
   const { itemsEnCarrito } = useAppContext();
+
+  const navigate = useNavigate()
+
+  const handleClick=()=>{
+    navigate('/')
+  }
 
   return (
     <header>
@@ -13,7 +19,7 @@ const NavBar = () => {
           <div className="container col-lg-3">
             <a className="nav-bar brand" href="http://localhost:3000/">
               <div className="logo text-center">
-                <img src={LOGO} alt="logo" width="150" />
+                <img src={LOGO} alt="logo" width="150" onClick={handleClick}/>
               </div>
             </a>
           </div>
