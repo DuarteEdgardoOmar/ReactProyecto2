@@ -17,7 +17,7 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-lg w-100 mx-1">
         <div className="container col-lg-10 col-8">
           <div className="container col-lg-3">
-            <a className="nav-bar brand" href="" onClick={handleClick}>
+            <a className="nav-bar brand" href="/" onClick={handleClick}>
               <div className="logo text-center">
                 <img src={LOGO} alt="logo" width="150" onClick={handleClick}/>
               </div>
