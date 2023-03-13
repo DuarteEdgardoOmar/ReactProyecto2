@@ -59,7 +59,7 @@ const NavBar = () => {
         <div className="cart container col-2 col-lg-1 justify-content-center">
           <Link to="shoppingCar">
             <box-icon name="cart"></box-icon>
-            <span className="item_total me-3">{itemsEnCarrito}</span>
+            <span className="item_total me-4">{itemsEnCarrito}</span>
           </Link>
         </div>
         <div className="col-1 col-lg-1 mx-2">
